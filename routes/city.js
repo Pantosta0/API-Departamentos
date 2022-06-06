@@ -6,7 +6,6 @@ import {
   BOLIVAR,
   ATLANTICO,
   MAGDALENA,
-  BARRANCABERMEJA,
   ERROR,
 } from "../constants.js";
 
@@ -26,9 +25,6 @@ router.get("/:city", (req, res) => {
 
   } else if (checkCity("santa marta", cityParam)) {
     res.json({"departamento": MAGDALENA(req.params.city).outputDepartment});
-
-  } else if (checkCity("barrancabermeja", cityParam)) {
-    res.json(BARRANCABERMEJA);
 
   } else {
     res.json(ERROR);
