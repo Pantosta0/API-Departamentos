@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 app.use("/", router);
 
 app.get("/", (req, res) => {
-  res.json("API to normalize names of departments of Colombia");
+  res.json("API departamentos de Colombia");
 });
 
 app.listen(PORT, () => {

@@ -23,8 +23,4 @@ export const MAGDALENA = (rawDepartment) => {
   };
 };
 
-export const BARRANCABERMEJA = {
-  message: "https://www.digame.com.co/barrancabermeja-no-existe/",
-};
-
 export const ERROR = { message: "Invalid city" };
